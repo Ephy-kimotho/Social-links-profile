@@ -1,0 +1,94 @@
+/* GOOGLE FONT IMPORT */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+/* GLOBAL STYLING */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* CSS VARIABLES */
+:root {
+    --Green: hsl(75, 94%, 57%);
+    --White: hsl(0, 0%, 100%);
+    --Grey: hsl(0, 0%, 20%);
+    --Dark-Grey: hsl(0, 0%, 12%);
+    --Off-Black: hsl(0, 0%, 8%);
+
+    --font: 14px;
+}
+
+/* STYLING THE MAIN CONTENT */
+body {
+    background-color: var(--Off-Black);
+    height: 100vh;
+    font-family: Inter, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mainContent {
+    width: 320px;
+    padding: 1.3rem;
+    border-radius: 0.8rem;
+    background-color: var(--Dark-Grey);
+}
+
+.attribution {
+    text-align: center;
+}
+
+.image {
+    width: 65px;
+    border-radius: 50%;
+}
+
+.name {
+    font-weight: 700;
+    color: var(--White);
+    margin: 1.2rem 0 0.4rem 0;
+}
+
+.location {
+    color: var(--Green);
+    font-size: var(--font);
+    margin-bottom: 1.3rem;
+}
+
+.social-links-title {
+    color: var(--White);
+    font-size: var(--font);
+    font-weight: 400;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.links {
+    list-style-type: none;
+    width: 100%;
+}
+
+.links>li {
+    width: 100%;
+    background-color: var(--Grey);
+    margin-bottom: 0.8rem;
+    text-align: center;
+    border-radius: 5px;
+}
+
+a {
+    display: block;
+    font-weight: 400;
+    border-radius: 5px;
+    text-decoration: none;
+    color: var(--White);
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 500ms ease-in-out;
+}
+
+a:hover {
+    background-color: var(--Green);
+}
